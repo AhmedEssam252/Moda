@@ -1,0 +1,344 @@
+#Login, #signUp, #ForgetPassword, #ResetPassword, #Verify, #ConfirmPassword {
+    display: grid;
+    justify-items: center;
+    position: relative;
+    grid-area: title;
+}
+#Login, #ForgetPassword, #ResetPassword, #Verify, #ConfirmPassword {
+    height:100vh;
+}
+#signUp{
+    height:115vh;
+}
+#Login, #signUp, #ForgetPassword, #ResetPassword, #Verify, #ConfirmPassword {
+    background:url(../../img/login-signup/pexels-sid-maia-3489129.jpg) no-repeat;
+    background-size: cover;
+}
+#Login h1, #signUp h1, #ForgetPassword h1, #ResetPassword h1, #Verify h1, #ConfirmPassword h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 60px;
+    color: #fff;
+    align-self: end;
+}
+#Verify h1, #ResetPassword h1, #ConfirmPassword h1 {
+    align-self: center !important;;
+}
+#Login a, #signUp a, #ForgetPassword a, #ResetPassword a, #Verify a, #ConfirmPassword a {
+    position: relative;
+    z-index: 2;
+    font-size: 25px;
+    background-color: #0f828270;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+    color: #fff;
+    height: 50px;
+}
+#Login::after, #signUp::after, #ForgetPassword::after, #ResetPassword::after, #Verify::after, #ConfirmPassword::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.loginForm{
+    display: grid;
+    grid-template-areas:
+    "title login"
+    ;
+    grid-template-columns: 45% 55%;
+    grid-area: login;
+}
+#search{
+    width: 100%;
+}
+.topSearch{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 50px;
+    flex-direction:row-reverse ;
+
+}
+.topSearch h1{
+    font-size: 50px;
+    color: #0F8282;
+    grid-area: h1;
+}
+.topSearch .back{
+    border-radius: 30px;
+    width: 100px;
+    height: 60px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #707070;
+    grid-area: back;
+    cursor: pointer;
+}
+.loginOrForget{
+    display:flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+ form input[type="email"], form input[type="password"], form input[type="text"], form input[type="number"]{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    color: #707070;
+    border: 1px solid #707070;
+    background: #F5F5F5;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+form label{
+    font-size: 20px;
+    color: #707070;
+}
+form .description{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.LoginTitle, .ForgetTitle, .ResetTitle, .VerifyTitle, .ConfirmTitle{
+ text-align: center;
+ font-size: 40px;
+ color: #0F8282;
+ font-weight: bold;
+}
+
+form .submit{
+    width: 150px;
+    height: 40px;
+    background-color: #0F8282;
+    border-radius: 5px;
+    border:none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+form .label{
+    flex-flow: column;
+    justify-content: start;
+    align-items: start;
+    margin: 10px 0;
+}
+
+.LoginContent, .signContent, .ForgetContent, .ResetContent, .VerifyContent, .ConfirmContent{
+    background: #fff;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.LoginContent, .signContent, .ForgetContent, .ResetContent{
+    grid-template-rows: 15% 15% 70%;
+}
+.VerifyContent{
+    grid-template-rows: 20% 20% 40% 20%;
+}
+.ConfirmContent{
+    grid-template-rows: 20% 20% 60%;
+
+}
+form {
+    align-self: start;
+    width: 70%;
+    display: grid;
+}
+#remember_me{
+    accent-color: #0F8282;
+    width: 15px;
+    height: 15px;
+}
+.loginOrForget a, .goToSignUp, .signOrLogin a{
+    color: #707070;
+}
+.goToSignUp{
+    text-align: center;
+    margin: 20px 0;
+}
+.goToSignUp:hover, .loginOrForget a:hover, .signOrLogin a:hover{
+    color: #2b2b2b;
+    text-decoration: underline;
+}
+.loginOrForget label, .loginOrForget a{
+    margin:10px;
+}
+.signOrLogin{
+    margin: 20px 0;
+}
+.signOrLogin a{
+    margin: 10px 0;
+    text-align: center;
+    display: grid;
+}
+.ResetContent form .submit, .ConfirmContent form .submit{
+    margin: 20px 0;
+}
+@media (max-width:900px){
+    .topSearch {
+        margin: 40px 20px;
+    }
+    .topSearch h1 {
+        font-size: 30px;
+    }
+    .topSearch .back {
+        width: 60px;
+        height: 40px;
+    }
+    .topSearch .back img{
+        width: 30px;
+        height: 30px;
+        margin: 2px;
+    }
+    .LoginTitle {
+        font-size: 35px;
+    }
+    .ForgetTitle, .ResetTitle, .VerifyTitle, .ConfirmTitle{
+        font-size: 30px;
+    }
+}
+@media (max-width:700px){
+    #Login, #signUp, .loginForm, #ForgetPassword, #ResetPassword, #Verify, #ConfirmPassword {
+        display: block;
+    }
+    #signUp{
+        height: 120vh;
+    }
+    form{
+        margin: 20px 0;
+    }
+    form p{
+        color: #fff;
+    }
+    #Login h1, #signUp h1, #ForgetPassword h1, #ResetPassword h1, #Verify h1, #ConfirmPassword h1{
+        position: absolute;
+        font-size: 30px;
+    }
+    .ForgetTitle, .ResetTitle, .VerifyTitle, .ConfirmTitle{
+        color: #fff;
+    }
+    form label {
+        color: #fff;
+    }
+    #Login h1{
+        top: 15.5%;
+    }
+    #signUp h1{
+        top: 10.5%;
+   }
+    #ForgetPassword h1{
+       top: 29.5%;
+    }
+    #ResetPassword h1{
+        top: 13.5%;
+    }
+    #Verify h1{
+        top: 18.5%;
+    }
+    #ConfirmPassword h1{
+        top: 23%;
+    }
+    #Login a, #signUp a, #ForgetPassword a, #ResetPassword a, #Verify a, #ConfirmPassword a{
+        display: none;
+    }
+    .LoginContent, .signContent,.ForgetContent, .ResetContent, .VerifyContent, .ConfirmContent{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background: rgba(0, 0, 0, 0.381);
+        width: 80%;
+        border-radius: 20px;
+    }
+    .LoginContent, .signContent{
+        grid-template-rows: 15% 8% 77%;
+    }
+    .ForgetContent, .ResetContent{
+        grid-template-rows: 15% 15% 70%;
+        height: 65vh;
+    }
+    .VerifyContent{
+        height: 70vh;
+        grid-template-rows: 20% 20% 40% 20%;
+    }
+    .LoginContent{
+        height: 74vh;
+    }
+    .signContent{
+        height: 105vh;
+        margin: 80px 0;
+    }
+    .ResetContent{
+        height: 80vh;
+    }
+    .ForgetContent{
+        margin: 80px 0;
+    }
+    form .label label, .loginOrForget span, .loginOrForget a, .LoginTitle, .loginOrForget a:hover, .goToSignUp, .goToSignUp:hover, .signOrLogin a, .signOrLogin a:hover {
+        color: #fff;
+    }
+    .topSearch .back {
+        border: 2px solid #fff;
+    }
+}
+@media (max-width:639px){
+    .LoginTitle {
+        font-size: 35px;
+    }
+}
+@media (max-width:450px){
+    form input[type="email"], form input[type="password"], form input[type="text"], form input[type="number"] {
+         height: 40px;
+         font-size: 16px;
+    }
+    .LoginTitle {
+        font-size: 25px;
+    }
+    .loginOrForget {
+        justify-content: center;
+    }
+    .loginOrForget a{
+        text-align: center;
+    }
+    .loginOrForget span{
+       font-size: 16px;
+    }
+    form label {
+        font-size: 18px;
+    }
+    #remember_me{
+        accent-color: #0F8282;
+        width: 13px;
+        height: 13px;
+    }
+    form {
+        align-self: start;
+        width: 80%;
+        display: grid;
+    }
+    .signContent{
+        height:95vh;
+    }
+    #Login h1{
+        top:15.5%;
+    }
+    #signUp h1{
+        top:14.5%;
+   }
+   .ForgetTitle, .ResetTitle, .VerifyTitle{
+    font-size: 25px;
+    margin: 0 10px;
+    color: #fff;
+    }
+}

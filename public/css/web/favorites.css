@@ -1,0 +1,112 @@
+#Favorites{
+    width:100%;
+    height:70vh;
+    background:url(../../img/Favorites/pexels-arina-krasnikova-5418960.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+#Favorites h1{
+    position: relative;
+    z-index: 2;
+    font-size: 60px;
+    color: #fff;
+}
+#Favorites::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+#details .slider-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 100px auto;
+}
+#details .slider-content .offer{
+    margin:20px;
+    position: relative;
+    width: 180px;
+    height: 280px;
+}
+#details .slider-content .offer .cloth{
+    border-radius: 40px;
+}
+#details .slider-content .offer::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    border-radius: 40px;
+}
+#details .slider-content .offer .items{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    z-index: 3;
+    width: 50px;
+    height: 200px;
+}
+#details .slider-content .offer .items .icon{
+    cursor: pointer;
+    margin:5px 0px ;
+}
+.fixedButtons{
+    width: 100%;
+    height:80px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+    position:fixed;
+    bottom: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+.fixedButtons button{
+    border-radius: 10px;
+    background-color: #0F8282;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    outline:none;
+    cursor: pointer;
+}
+@media (max-width:900px) {
+    .fixedButtons{
+        bottom: 77px;
+    }
+}
+@media (max-width:600px) {
+    .fixedButtons{
+        bottom: 0px;
+    }
+    .fixedButtons button{
+        font-size: 12px;
+        margin: 10px;
+        height: 40px;
+    }
+    .fixedButtons{
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        position:fixed;
+        bottom: 0;
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0.548);
+    }
+}

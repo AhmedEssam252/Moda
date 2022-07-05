@@ -1,0 +1,141 @@
+#categories{
+    width:100%;
+    height:70vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    background-position-y: 10%;
+}
+#categories h1{
+    position: relative;
+    z-index: 2;
+    font-size: 60px;
+    color: #fff;
+}
+#categories::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+#details .slider-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 100px auto;
+}
+#details .slider-content .offer{
+    margin:20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#details .slider-content .offer .img{
+    position: relative;
+    width: 180px;
+    height: 280px;
+}
+#details .slider-content .offer .cloth{
+    border-radius: 40px;
+}
+#details .slider-content .offer .img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    border-radius: 40px;
+}
+#details .slider-content .offer .items{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    z-index: 3;
+    width: 50px;
+    height: 200px;
+}
+#details .slider-content .offer .items .icon{
+    cursor: pointer;
+    margin:5px 0px ;
+}
+.slider-content .offer a{
+    font-size: 1em;
+    padding: 0.4em 1em 0.2em 1em;
+    border-radius: 0.5em;
+    margin: 0em 1em;
+    color: #fff;
+    background-color: #069696;
+}
+.slider-content .offer p{
+  margin-bottom: 10px;
+}
+.slider-content .offer h1{
+    font-size: 25px;
+    margin: 20px 0;
+    color: #5d5d5d;
+}
+
+
+@media (max-width:900px) {
+    .fixedButtons{
+        bottom: 77px;
+    }
+}
+@media (max-width:600px) {
+    .fixedButtons{
+        bottom: 0px;
+    }
+    .fixedButtons button{
+        font-size: 12px;
+        margin: 10px;
+        height: 40px;
+    }
+    .fixedButtons{
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        position:fixed;
+        bottom: 0;
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0.548);
+    }
+}
+@media (max-width:900px){
+    nav .otherItems .selectLang.active ul {
+        top: -100px;
+    }
+}
+@media (max-width:600px) {
+    nav .otherItems .selectLang.active ul {
+        top: 30px;
+    }
+}
+@media (max-width:500px) {
+
+    .brand h1{
+        font-size: 30px;
+    }
+    nav #toggle div {
+        height: 3px;
+    }
+    nav {
+        padding:10px 0;
+    }
+    nav .change div:nth-child(1) {
+        -webkit-transform: rotate(-45deg) translate(-7px, 4px);
+        transform: rotate(-45deg) translate(-7px, 4px);
+    }
+
+}

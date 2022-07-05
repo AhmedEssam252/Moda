@@ -1,0 +1,193 @@
+.topSearch{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0px 50px 50px 50px;
+}
+.topSearch .searchBar{
+    position: relative;
+}
+.getSearch form button{
+    background: #069696;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: url(/img/dashboard/hand-pointer-event-line-svgrepo-com.svg), pointer;
+    position: absolute;
+    top: 57px;
+    margin: 0 -99px;
+}
+.topSearch h1{
+    font-size: 50px;
+    color: #0F8282;
+    grid-area: h1;
+}
+.topSearch .back{
+    border-radius: 30px;
+    width: 100px;
+    height: 60px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    grid-area: back;
+    cursor: pointer;
+}
+.getSearch{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.getSearch h1{
+    font-size: 50px;
+    color: #313131;
+}
+.getSearch form input{
+    width: 100% !important;
+    height: 60px !important;
+    border-radius: 40px !important;
+    outline: none !important;
+    background: #F5F5F5 !important;
+    border: 1px solid #313131 !important;
+    margin: 50px 0 20px 0 !important;
+    padding: 10px 20px !important;
+    font-size: 30px !important;
+    color: #313131 !important;
+}
+.slider-content {
+    top: 0%;
+    max-width: 80%;
+    margin: auto;
+}
+#search .slider-content::-webkit-scrollbar {
+    width: 10px;
+}
+#search .slider-content::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+}
+#search .slider-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+#details .slider-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding:0;
+    max-height: 350px;
+    overflow-y: auto;
+}
+#details .slider-content .offer{
+    margin:20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#details .slider-content .offer .img{
+    position: relative;
+    width: 180px;
+    height: 280px;
+}
+#details .slider-content .offer .cloth{
+    border-radius: 40px;
+}
+#details .slider-content .offer .img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    border-radius: 40px;
+}
+#details .slider-content .offer .items{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    z-index: 3;
+    width: 50px;
+    height: 200px;
+}
+#details .slider-content .offer .items .icon{
+    cursor: pointer;
+    margin:5px 0px ;
+}
+.slider-content .offer a{
+    font-size: 1em;
+    padding: 0.4em 1em 0.2em 1em;
+    border-radius: 0.5em;
+    margin: 0em 1em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.398);
+}
+.slider-content .offer p{
+  margin-bottom: 10px;
+}
+.slider-content .offer h1{
+    font-size: 25px;
+    margin: 20px 0;
+    color: #5d5d5d;
+}
+
+
+@media (max-width:900px){
+    .getSearch button{
+        padding: 5px 15px;
+        top: 31.5px;
+        margin: 0 -88px;
+    }
+    .topSearch {
+        margin: 0px 20px 20px 20px;
+    }
+    .topSearch h1 {
+        font-size: 30px;
+    }
+    .topSearch .back {
+        width: 60px;
+        height: 40px;
+    }
+    .topSearch .back img{
+        width: 30px;
+        height: 30px;
+    }
+    .getSearch h1 {
+        font-size: 30px;
+        text-align: center;
+
+    }
+    .getSearch input {
+        height: 50px;
+        margin: 25px 0;
+        font-size: 25px;
+    }
+    nav .otherItems .selectLang.active ul {
+        top: -100px;
+    }
+}
+@media (max-width:600px) {
+    nav .otherItems .selectLang.active ul {
+        top: 30px;
+    }
+}
+@media (max-width:500px) {
+
+    .brand h1{
+        font-size: 30px;
+    }
+    nav #toggle div {
+        height: 3px;
+    }
+    nav {
+        padding:10px 0;
+    }
+    nav .change div:nth-child(1) {
+        -webkit-transform: rotate(-45deg) translate(-7px, 4px);
+        transform: rotate(-45deg) translate(-7px, 4px);
+    }
+
+}

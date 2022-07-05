@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(246, 246, 246);
+    color:#0F8282;
+
+}
+#AdminNavbar{
+    width: 100px;
+    height: 100%;
+    background-color: #069696;
+    border-radius: 20px;
+    padding:20px 0px;
+    margin: 20px 0px;
+    display: grid;
+    justify-items: center;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.127);
+    position: fixed;
+    transition: 0.6s ease-in-out;
+    z-index: 10;
+}
+#AdminNavbar .listItems{
+    width: 100%;
+}
+#AdminNavbar .brand{
+    transition: 0.6s ease-in-out;
+    margin: 0px;
+}
+#AdminNavbar .brand h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.6s ease-in-out;
+}
+
+#AdminNavbar .listItems li a{
+    color: #fff;
+}
+#AdminNavbar a{
+    color: #fff;
+
+}
+#AdminNavbar .links{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+    "img";
+    margin: 30px 0;
+    position: relative;
+
+}
+#AdminNavbar .links::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 80%;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+}
+#AdminNavbar .links p{
+    display: grid;
+    opacity: 0;
+    grid-area: p;
+    position: absolute;
+    font-size: 18px;
+    height: 0px;
+}
+#AdminNavbar .links img{
+    grid-area: img;
+}
+/* #AdminNavbar .listItems .last{
+    margin:75px 0;
+} */
+#AdminNavbar .FullView{
+    position: absolute;
+    right: -50px;
+    top: 0%;
+    transition: 0.6s ease-in-out;
+    cursor: url('/img/dashboard/hand-pointer-event-line-svgrepo-com.svg'), pointer;
+}
+#AdminNavbar.active .FullView.active{
+    transition: 0.6s ease-in-out;
+    transform: rotate(180deg);
+}
+#AdminNavbar.active .brand{
+    transition: 0.6s ease-in-out;
+    justify-self: start;
+    margin: 0 40%;
+}
+#AdminNavbar.active {
+    transition: 0.6s ease-in-out;
+    width: 310px;
+}
+#AdminNavbar.active .links p{
+    position: static;
+    opacity: 1;
+    height: 30px;
+    transition: 1s 0.5s ease-in-out;
+}
+#AdminNavbar.active .links{
+    grid-template-areas:
+    "img p";
+    grid-template-columns: 100px auto;
+}
+.Auth {
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: #069696;
+    padding: 30px 50px;
+    box-shadow: 2px 2px 4px 1px rgb(0 0 0 / 13%);
+    z-index: 9;
+    }
+.Auth .manageAccount{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.Auth .manageAccount p{
+    margin: 0 10px;
+    color: white;
+}
+.Auth .manageAccount img{
+    margin: 0 10px;
+}
+.Auth a{
+    background-color: rgba(255, 255, 255, 0.398);
+    height: 40px;
+    padding: 0 10px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 0.5em;
+    margin: 0em 1em;
+    color: #fff;
+}
