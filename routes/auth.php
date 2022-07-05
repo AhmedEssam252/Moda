@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Web\CheckoutController;
 use App\Http\Controllers\Web\ProductsController;
-use App\Http\Controllers\web\FavoritesController;
+use App\Http\Controllers\Web\FavoritesController;
 use App\Http\Controllers\Web\ShoppingBagController;
 use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\VerifyEmailController;
