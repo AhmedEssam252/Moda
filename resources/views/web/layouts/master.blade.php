@@ -107,6 +107,7 @@
                     <li><a href="/categories/men">{{__('lang.Men')}}</a></li>
                     <li><a href="/categories/women">{{__('lang.Women')}}</a></li>
                     <li><a href="/categories/children">{{__('lang.Children')}}</a></li>
+                    <li><a href="/products">{{__('lang.Products')}}</a></li>
                 </ul>
             </div>
             <div id="toggle" onclick="myFunction(this)">
