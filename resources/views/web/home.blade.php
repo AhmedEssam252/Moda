@@ -16,7 +16,7 @@
                     <img src={{asset(__('lang.saleImg'))}} alt="offer" width="150" height="150" class="offera1">
                     <img src="{{asset('img/Home/pexels-artem-beliaikin-1078958.jpg')}}" alt="clothes" width="180" height="271" class="cloth cloth1">
                     <h1>{{ __('lang.Sale') }}</h1>
-                    <a href="#">{{ __('lang.DiscoverMore') }}</a>
+                    <a href="/products">{{ __('lang.DiscoverMore') }}</a>
                 </div>
                 <div class="title title1">
                     <h1>{{ __('lang.ModaOffers') }}</h1>
@@ -27,7 +27,7 @@
                     <img src={{asset(__('lang.saleImg'))}} alt="offer" width="150" height="150" class="offera2">
                     <img src="{{asset('img/Home/pexels-skylar-kang-6046183.jpg')}}" alt="shoes" width="180" height="271" class="cloth cloth2">
                     <h1>{{ __('lang.Sale') }}</h1>
-                    <a href="#">{{ __('lang.DiscoverMore') }}</a>
+                    <a href="/products">{{ __('lang.DiscoverMore') }}</a>
                 </div>
             </div>
         </div>
